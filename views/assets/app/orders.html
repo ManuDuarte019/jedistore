@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Pedidos — Ordem Jedi Store</title>
+<meta name="description" content="Ordem Jedi Store — colecionáveis premium inspirados em universos sci-fi clássicos." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="../_common/styles/styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <nav class="nav" aria-label="Navegação principal">
+      <a class="brand" href="../../../index.html">
+        <span class="brand-name">ORDEM JEDI</span>
+        <span class="brand-sub">· STORE ·</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../app/menu.html">Coleção</a></li>
+        <li><a href="../app/index.html">Universo</a></li>
+        <li><a href="../public/about.html">Sobre</a></li>
+        <li><a href="../public/faq.html">FAQ</a></li>
+        <li><a href="../public/contact.html">Contato</a></li>
+      </ul>
+      <a class="nav-cta" href="../public/login.html">Acessar</a>
+      <button class="menu-toggle" aria-label="Abrir menu"><span></span></button>
+    </nav>
+  </div>
+</header>
+<section class="app-shell starfield"><div class="container app-grid">
+  <aside class="side-nav"><h4>Sua Ordem</h4><ul><li><a href="../app/index.html" class="">Painel</a></li><li><a href="../app/menu.html" class="">Catálogo</a></li><li><a href="../app/favorites.html" class="">Favoritos</a></li><li><a href="../app/orders.html" class="active">Pedidos</a></li><li><a href="../app/profile.html" class="">Perfil</a></li></ul></aside>
+  <div>
+    <header style="margin-bottom:32px" class="reveal">
+      <p class="eyebrow">Registros</p>
+      <h1 style="font-family:var(--display);font-size:2.4rem;letter-spacing:.06em;color:var(--parchment);margin-top:14px">Pedidos</h1>
+    </header>
+    <p data-orders-loading>Carregando pedidos...</p>
+    <p data-orders-feedback hidden role="alert"></p>
+    <div class="panel reveal">
+      <table class="table">
+        <thead><tr><th>Pedido</th><th>Status</th><th>Subtotal</th><th>Frete</th><th>Total</th><th>Data</th></tr></thead>
+        <tbody data-orders-list></tbody>
+      </table>
+    </div>
+  </div>
+</div></section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <h4>Ordem Jedi Store</h4>
+        <p>Artefatos numerados, edições raras e relíquias de universos cinematográficos. Uma loja para guardiões da ficção científica.</p>
+      </div>
+      <div>
+        <h4>Navegar</h4>
+        <ul>
+          <li><a href="../app/menu.html">Coleção</a></li>
+          <li><a href="../app/orders.html">Pedidos</a></li>
+          <li><a href="../public/about.html">Sobre</a></li>
+          <li><a href="../public/contact.html">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Conta</h4>
+        <ul>
+          <li><a href="../public/login.html">Entrar</a></li>
+          <li><a href="../public/register.html">Criar conta</a></li>
+          <li><a href="../app/profile.html">Perfil</a></li>
+          <li><a href="../public/faq.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">© <span data-year></span> Ordem Jedi Store · Setor Exterior · Galáxia Distante</div>
+  </div>
+</footer>
+<script src="../_common/scripts/main.js" defer></script>
+<script type="module" src="orders.js"></script>
+</body>
+</html>

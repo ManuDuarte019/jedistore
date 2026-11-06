@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Login — Ordem Jedi Store</title>
+<meta name="description" content="Ordem Jedi Store — colecionáveis premium inspirados em universos sci-fi clássicos." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="../_common/styles/styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <nav class="nav" aria-label="Navegação principal">
+      <a class="brand" href="../../../index.html">
+        <span class="brand-name">ORDEM JEDI</span>
+        <span class="brand-sub">· STORE ·</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../app/menu.html">Coleção</a></li>
+        <li><a href="../app/index.html">Universo</a></li>
+        <li><a href="../public/about.html">Sobre</a></li>
+        <li><a href="../public/faq.html">FAQ</a></li>
+        <li><a href="../public/contact.html">Contato</a></li>
+      </ul>
+      <a class="nav-cta" href="../public/login.html">Acessar</a>
+      <button class="menu-toggle" aria-label="Abrir menu"><span></span></button>
+    </nav>
+  </div>
+</header>
+<section class="page-hero starfield">
+    <div class="sun-glow" style="position:absolute;inset:0;opacity:.6"></div>
+    <div class="vignette" style="position:absolute;inset:0"></div>
+    <div class="container reveal">
+      <p class="eyebrow">Identificação Estelar</p>
+      <h1>Acessar a Ordem</h1>
+      <p>Autentique suas credenciais para acessar seu arquivo pessoal.</p>
+      <div class="divider"></div>
+    </div>
+  </section>
+<section class="section" style="padding-top:0"><div class="container">
+  <form class="form-wrap reveal" data-auth-form="loginFromForm" data-success-path="../app/index.html">
+    <p class="eyebrow">Canal Privado</p>
+    <h2>Entrar</h2>
+    <div class="field"><label for="email">Coordenadas (e-mail)</label><input id="email" name="email" type="email" required placeholder="voce@galaxia.com" /></div>
+    <div class="field"><label for="password">Senha</label><input id="password" name="password" type="password" required placeholder="Mínimo 8 caracteres" /></div>
+    <p data-feedback hidden role="alert"></p>
+    <button class="btn gold" type="submit" style="width:100%;margin-top:8px">Acessar</button>
+    <p class="form-foot" data-register-link>Ainda não tem conta? <a href="../public/register.html">Criar acesso</a></p>
+    <p class="form-foot" data-admin-entry><a href="../public/login.html?admin=1">Acesso administrativo</a></p>
+    <p class="form-foot" data-user-login-link hidden><a href="../public/login.html">Voltar ao login de cliente</a></p>
+  </form>
+</div></section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <h4>Ordem Jedi Store</h4>
+        <p>Artefatos numerados, edições raras e relíquias de universos cinematográficos. Uma loja para guardiões da ficção científica.</p>
+      </div>
+      <div>
+        <h4>Navegar</h4>
+        <ul>
+          <li><a href="../app/menu.html">Coleção</a></li>
+          <li><a href="../app/orders.html">Pedidos</a></li>
+          <li><a href="../public/about.html">Sobre</a></li>
+          <li><a href="../public/contact.html">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Conta</h4>
+        <ul>
+          <li><a href="../public/login.html">Entrar</a></li>
+          <li><a href="../public/register.html">Criar conta</a></li>
+          <li><a href="../app/profile.html">Perfil</a></li>
+          <li><a href="../public/faq.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">© <span data-year></span> Ordem Jedi Store · Setor Exterior · Galáxia Distante</div>
+  </div>
+</footer>
+<script src="../_common/scripts/main.js" defer></script>
+<script type="module" src="auth.js"></script>
+</body>
+</html>

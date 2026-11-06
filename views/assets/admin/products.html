@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Produtos — Ordem Jedi Store</title>
+<meta name="description" content="Ordem Jedi Store — colecionáveis premium inspirados em universos sci-fi clássicos." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="../_common/styles/styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <nav class="nav" aria-label="Navegação principal">
+      <a class="brand" href="../../../index.html">
+        <span class="brand-name">ORDEM JEDI</span>
+        <span class="brand-sub">· STORE ·</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../app/menu.html">Coleção</a></li>
+        <li><a href="../app/index.html">Universo</a></li>
+        <li><a href="../public/about.html">Sobre</a></li>
+        <li><a href="../public/faq.html">FAQ</a></li>
+        <li><a href="../public/contact.html">Contato</a></li>
+      </ul>
+      <a class="nav-cta" href="../public/login.html">Acessar</a>
+      <button class="menu-toggle" aria-label="Abrir menu"><span></span></button>
+    </nav>
+  </div>
+</header>
+<section class="app-shell starfield" data-products-page><div class="container app-grid">
+  <aside class="side-nav"><h4>Centro de Comando</h4><ul><li><a href="../admin/index.html" class="">Painel</a></li><li><a href="../admin/products.html" class="active">Produtos</a></li><li><a href="../admin/orders.html" class="">Pedidos</a></li><li><a href="../admin/admins.html" class="">Administradores</a></li><li><a href="../admin/faq.html" class="">FAQ</a></li><li><a href="../admin/profile.html" class="">Perfil</a></li></ul></aside>
+  <div>
+    <header style="margin-bottom:32px;display:flex;justify-content:space-between;align-items:end" class="reveal">
+      <div><p class="eyebrow">Catálogo</p><h1 style="font-family:var(--display);font-size:2.4rem;letter-spacing:.06em;color:var(--parchment);margin-top:14px">Produtos</h1></div>
+      <button class="btn" type="button" data-logout>Sair</button>
+    </header>
+    <form class="panel reveal" data-product-form>
+      <h2>Novo produto</h2>
+      <div class="field"><label for="category_id">Categoria</label><input id="category_id" name="category_id" type="number" min="1" required></div>
+      <div class="field"><label for="name">Nome</label><input id="name" name="name" required></div>
+      <div class="field"><label for="sku">SKU</label><input id="sku" name="sku" required></div>
+      <div class="field"><label for="slug">Slug</label><input id="slug" name="slug" required></div>
+      <div class="field"><label for="price">Preço</label><input id="price" name="price" type="number" min="0" step="0.01" required></div>
+      <div class="field"><label for="stock">Estoque</label><input id="stock" name="stock" type="number" min="0"></div>
+      <div class="field"><label for="description">Descrição</label><textarea id="description" name="description"></textarea></div>
+      <p data-feedback hidden role="alert"></p>
+      <button class="btn" type="submit">Salvar produto</button>
+    </form>
+    <div class="panel reveal">
+      <table class="table"><thead><tr><th>Peça</th><th>SKU</th><th>Categoria</th><th>Preço</th><th>Estoque</th></tr></thead><tbody data-products-list></tbody></table>
+    </div>
+  </div>
+</div></section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <h4>Ordem Jedi Store</h4>
+        <p>Artefatos numerados, edições raras e relíquias de universos cinematográficos. Uma loja para guardiões da ficção científica.</p>
+      </div>
+      <div>
+        <h4>Navegar</h4>
+        <ul>
+          <li><a href="../app/menu.html">Coleção</a></li>
+          <li><a href="../app/orders.html">Pedidos</a></li>
+          <li><a href="../public/about.html">Sobre</a></li>
+          <li><a href="../public/contact.html">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Conta</h4>
+        <ul>
+          <li><a href="../public/login.html">Entrar</a></li>
+          <li><a href="../public/register.html">Criar conta</a></li>
+          <li><a href="../app/profile.html">Perfil</a></li>
+          <li><a href="../public/faq.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">© <span data-year></span> Ordem Jedi Store · Setor Exterior · Galáxia Distante</div>
+  </div>
+</footer>
+<script src="../_common/scripts/main.js" defer></script>
+<script type="module" src="products.js"></script>
+</body>
+</html>
